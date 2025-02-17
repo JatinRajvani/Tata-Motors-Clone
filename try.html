@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>How To Insert an Image</title>
+    <!-- <script>
+
+        var imageUrls = ["./Punch-Main.png", "./Curv.png", "./nexon-main.png"];
+        function changeImage(){
+            var img = document.getElementById('image');//Image whic we have to select//
+            var imageUrl = imageUrls.shift();
+            img.src = imageUrl;
+            imageUrls.push(imageUrl);
+        }
+
+    </script> -->
+<link rel="stylesheet" href="try.css">
+</head>
+<body>
+<!-- <img id="image" src="./Punch-Main.png" />
+
+<br><br><br>
+<button id="clickme" onclick="changeImage();">Click to change image!</button>
+
+<div class="try">
+<span style="width: 20vh; height: 20vh; align-items: center; align-content: center;font-size: 4rem; border: 1px solid black;">hello world</span>
+<button class="button">click me</button>
+
+<script>
+    const button=document.querySelector('.button')
+    let array=['.try']
+    let div = document.querySelector('');
+
+    button.addEventListener('click',(event)=>{
+    div.style.backgroundColor="Red"
+    })
+</script>
+</div> -->
+<ul>
+    
+    <li><a href="#">Home</a></li>
+    <li>
+        <a href="#" class="maintext">Select⌄</a>
+         <ul class="dropdown">
+         <li><a href="#" class="disc1">HTML</a></li>
+         <li><a href="#" class="disc2">Css</a></li>
+         <li><a href="#" class="disc3">Java Script</a></li>
+         <li><a href="#" class="disc4">React</a></li>
+         <li><a href="#" class="disc1">HTML</a></li>
+         <li><a href="#" class="disc2">Css</a></li>
+         <li><a href="#" class="disc3">Java Script</a></li>
+         <li><a href="#" class="disc4">React</a></li>
+        </ul>
+
+    </li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Contact Us</a></li>
+    <li>
+        <a href="#" class="maintext">Select⌄</a>
+         <ul class="dropdown">
+         <li><a href="#" class="disc1">HTML</a></li>
+         <li><a href="#" class="disc2">Css</a></li>
+         <li><a href="#" class="disc3">Java Script</a></li>
+         <li><a href="#" class="disc4">React</a></li>
+        </ul>
+
+    </li>
+</ul>
+<script>
+    const change=document.querySelector('.maintext')
+    const select1=document.querySelector('.disc1')
+
+    select1.addEventListener('click',(event)=>{
+     change.textContent=select1.innerHTML
+     change.style.color='black'
+    })
+</script>
+</body>
+</html>

@@ -9,34 +9,35 @@ body{
    row-gap: 8vh;
    
 }
-.Parent1{
+.mainparent1{
     display: flex;
+}
+.Parent1{
+    display: none;
     flex-direction: column;
     row-gap: 45vh;
     height: 100vh;
-    background-image: url(Curv.png);
     background-repeat: no-repeat;
     position: relative;
-    animation-name: first;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
     margin: auto;
     width: 100%;
-   
+    overflow-x: hidden;
+    overflow-y: hidden;
+} 
+.imgwrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
-/* 
-@keyframes first {
-    from{
-        width: 0%;
-    }
-    to{
-        width: 100%;
-    }
-} */
+.imgwrapper>button{
+    position: absolute;
+    cursor: pointer;
+}
 .Navbar{
+    width: 95vw;
+    position: absolute;
     padding-left: 4vh;
     padding-top: 4vh;
-    padding-right: 6vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,7 +45,19 @@ body{
 .secondnav{
     display: flex;
     flex-direction: row;
-    column-gap: 2vw;
+    column-gap: 1.5vw;
+
+}
+.sidearrow{
+    top: 50vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 91vw;
+    position: absolute;
+    cursor: pointer;
+}
+.sidearrow>div>img{
+    cursor: pointer;
 }
 .text1{
 
@@ -55,25 +68,43 @@ body{
 }
 .maintext1{
     padding-left: 132vh;
-    position: relative;
+    position:absolute;
     animation-name: text1;
     animation-duration: 2s;
     animation-iteration-count: 1;
+    top: 63vh;
+}
+.maintext2{
+    padding-left: 18vh;
+    position:absolute;
+    animation-name: text1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    top:50vh;
+}
+.maintext3{
+    padding-left: 22vh;
+    position:absolute;
+    animation-name: text1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    top:40vh;
 }
 
-@keyframes text1{
+/* @keyframes text1{
     from{
         width: 0%;
     }
     to{
         width: 80%;
     }
-}
+} */
 .subtext1{
     padding:2.5vh 2vw;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .Learn1{
@@ -108,6 +139,9 @@ body{
 .curv1{
     height: 46.5vh;
    margin-left: -10vh;
+}
+.curv1:hover{
+    transform: scale(1.15);
 }
 .subchild21{
 display: flex;
@@ -154,6 +188,7 @@ row-gap: 2vh;
     width: 55vh;
   background-color: rgb(24, 100, 179);
   align-content: center;
+ 
 
 }
 .child32{
@@ -165,7 +200,9 @@ row-gap: 2vh;
 .tiago{
  padding-left: 12vh;
  height: 45vh;
- 
+}
+.tiago:hover{
+    transform: scale(1.15);
 }
 .text3{
     display: flex;
@@ -182,22 +219,24 @@ row-gap: 2vh;
     opacity: 0.5;
 }
 
-#circle31{
+#circle21{
     background-color: #1864B3;
+    cursor: pointer;
 }
-#circle32{
+#circle22{
     background-color: #AC120A;
+    cursor: pointer;
 }
-#circle33{
+#circle23{
     background-color:#38393B;
 }
-#circle34{
+#circle24{
     background-color: white;
 }
-#circle35{
+#circle25{
     background: linear-gradient(to right, #1864B3 50%, black 50%);
 }
-#circle36{
+#circle26{
     background: linear-gradient(to right, #DCDDDF 50%, black 50%);
 }
 /*Parent-4*/
@@ -229,6 +268,9 @@ row-gap: 2vh;
    margin-left: -9vh;
     margin-top: 5vh;
   
+}
+.altroz:hover{
+    transform: scale(1.15);
 }
 .child42{
     
@@ -398,6 +440,9 @@ margin: auto;
     margin-left: -10vh;
      margin-top: 5vh;
 }
+.harrier:hover{
+    transform: scale(1.15);
+}
 #child82{
     background-color: rgb(210, 201, 36);
 }
@@ -429,6 +474,9 @@ background-color:rgb(202, 172, 124) ;
 .safari{
     padding-left: 8vh;
     height: 45vh;
+}
+.safari:hover{
+    transform: scale(1.15);
 }
 
 #circle91{
